@@ -35,7 +35,7 @@ export default function Home() {
   return (
     <main className="flex h-full w-full min-h-screen flex-col items-center justify-center bg-gray-700">
       {!emailSent && (
-        <div className="w-full h-full md:w-[700px] md:max-h-[500px] md:rounded-xl md:flex flex-row-reverse bg-white overflow-hidden">
+        <div className="w-full h-full md:w-[700px] md:max-h-[500px] md:rounded-3xl md:flex flex-row-reverse bg-white overflow-hidden">
           {/* image */}
           <div className="md:hidden w-full h-full ">
             <Image
@@ -96,10 +96,10 @@ export default function Home() {
                 onChange={handleChange}
               />
               <button
-                className="w-full py-3 rounded-lg md:text-xs bg-gray-700 text-white font-bold md:font-normal active:bg-gradient-to-r from-red-400 to-orange-500 duration-200"
+                className="w-full py-3 rounded-lg md:text-xs bg-gray-800 text-white font-bold md:font-normal active:bg-gradient-to-r from-red-400 to-orange-500 duration-200"
                 onClick={validateEmail}
               >
-                Subscibe to monthly newsletter
+                Subscribe to monthly newsletter
               </button>
             </div>
           </div>
