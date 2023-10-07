@@ -153,14 +153,14 @@ export default function Home() {
                 transition={{ delay: 1.1 }}
               />
               <motion.button
-                className="w-full py-3 rounded-lg md:text-xs bg-gray-800 text-white font-bold md:font-normal hover:bg-gradient-to-r from-red-400 to-orange-500 duration-200"
+                className="w-full py-3 rounded-lg md:text-xs bg-gray-800 text-white font-bold md:font-normal hover:bg-gradient-to-r from-red-400 to-orange-500"
                 onClick={validateEmail}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.2 }}
                 whileTap={{ boxShadow: "0px 0px 20px hsl(30, 100%, 66%)" }}
               >
-                Subscribe to monthly newsletter
+                <span className="animate-pulse">Subscribe to monthly newsletter</span> 
               </motion.button>
             </div>
           </div>
